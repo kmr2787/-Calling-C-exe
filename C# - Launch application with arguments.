@@ -19,3 +19,5 @@ XmlNodeList addressV4 = node.SelectNodes("descendant::address[@addrtype='ipv4']"
   <port>73</port>
  </Ip>
 </Ips>
+
+C:\Program Files (x86)\Nmap\nmap.exe -sn 192.168.1.* -oX -
