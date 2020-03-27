@@ -1,0 +1,21 @@
+var nmapX = new XmlDocument();
+nmapX.XmlResolver = null;
+nmapX.LoadXml(xmlStr);
+XmlNodeList nodes = nmapXml.SelectNodes("nmaprun/host"); 
+foreach (XmlNode node in nodes)
+ {
+if (node.GetAttribute("state", "status") != "up") continue;
+XmlNodeList addressV4 = node.SelectNodes("descendant::address[@addrtype='ipv4']");
+}
+
+çıktı
+<Ips>
+ <Ip value="192.168.10.34">
+  <port>80</port>
+  <port>73</port>
+ </Ip>
+ <Ip value="192.168.10.35">
+  <port>80</port>
+  <port>73</port>
+ </Ip>
+</Ips>
